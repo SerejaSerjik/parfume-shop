@@ -1,0 +1,82 @@
+@import "../../../styles/helpers/variables";
+
+.header {
+  background-color: $bg-color;
+  padding: 26px 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: all .3s;
+
+  &-sticky {
+    padding: 17px 40px 0;
+    position: fixed;
+    top: 0;
+
+    & .header__items {
+      padding-bottom: 17px;
+      border-bottom: 1px solid $active-color2;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 26px;
+    transition: all .3s;
+  }
+
+  &__item {
+    line-height: 25px;
+
+    & a {
+      color: $active-color1;
+      text-decoration: none;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    text-transform: uppercase;
+
+    &-active {
+      border-bottom: 1px solid $active-color2;
+    }
+  }
+
+  &__logo  img{
+    display: flex;
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+    min-height: 23px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    cursor: pointer;
+    
+    &:not(:last-child) {
+      margin-right: 28px;
+    }
+
+    &:last-child img {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      fill: $active-color1;
+    }
+  }
+}

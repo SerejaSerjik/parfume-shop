@@ -1,12 +1,29 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+@import "../helpers/variables";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+* {
+  font-family: "Tenor Sans", sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
 .container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+  background: $bg-color;
+  height: 900px;
+  padding: 0 80px;
+  width: 100%;
 }

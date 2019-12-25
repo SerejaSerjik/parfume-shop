@@ -5,3 +5,24 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+@import "../styles/helpers/variables";
+
+* {
+  font-family: 'Tenor Sans', sans-serif;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.container {
+  background: $bg-color;
+  height: 900px;
+  padding: 0 80px;
+  width: 100%;
+}
+
+.banner-block {
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+}

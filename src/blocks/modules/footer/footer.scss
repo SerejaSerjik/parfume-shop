@@ -1,0 +1,58 @@
+@import "../../../styles/helpers/variables";
+.footer {
+  padding: 27px 100px 80px;
+
+  &__top-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 29px;
+    border-bottom: 1px solid $active-color2;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &-item a{
+      color: $active-color1;
+      text-transform: uppercase;
+      text-decoration: none;
+      line-height: 25px;
+    }
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    & a:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__bottom-part {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & span {
+      line-height: 20px;
+      color: $active-color3;
+    }
+  }
+}
